@@ -31,16 +31,37 @@ nav {
   font-family: "Anton", sans-serif;
   font-size: 18px;
   letter-spacing: 1.5px;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 10;
+}
+
+nav ul {
+  margin: 0 auto;
+
 }
 
 li {
   display: inline-block;
+  width: 80px;
+  color: #fff;
 }
-nav li.logo {
+
+li a {
+  text-decoration: none;
+}
+
+li.logo {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 24px;
   letter-spacing: normal;
-  margin: 5 10 5 5;
+}
+
+main {
+  position: relative;
+  top: 20px;
 }
 
 .hero {
@@ -48,6 +69,5 @@ nav li.logo {
 }
 
 .center {
-  padding: 10 auto;
-  margin: 5000 auto;
+
 }
