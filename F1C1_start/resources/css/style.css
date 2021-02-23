@@ -245,6 +245,7 @@ header .mobile {
   }
 
   #sign-up-cta {
+    margin: 0;
     position: static;
     width: auto;
     height: auto;
