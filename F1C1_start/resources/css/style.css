@@ -136,28 +136,26 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
-  header .desktop {
+
+  header .desktop, .logo {
     display: none;
   }
 
   header .mobile {
     display: block;
+    height: 3rem;
     width: 100%;
-  }
-
-  header .content {
-    padding: .5rem 0;
   }
 
   header .mobile ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    padding: auto;
+    overflow: auto;
   }
 
   header .mobile li {
+    top:0;
     padding: 0;
+    width: 100%;
   }
 
   header .mobile .button {
@@ -165,6 +163,13 @@ header .mobile {
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  header .mobile .button {
+    display: none;
+    width: 0;
   }
 }
 
