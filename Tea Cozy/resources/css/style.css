@@ -11,6 +11,12 @@ h4 {
   margin: 10px;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .image-container {
 
 }
@@ -25,7 +31,6 @@ header {
   left:0;
   width: 100%;
   position: fixed;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid seashell;
@@ -47,15 +52,14 @@ header ul {
 }
 
 #logo {
+  justify-content: flex-start;
   height: 50px;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
+  width: 1200px
+  margin: auto;
   top: 69px;
 }
 
@@ -63,21 +67,15 @@ main {
   background-image: url("../images/img-mission-background.jpg");
   background-repeat: no-repeat;
   height: 700px;
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
   align-items: center;
 }
 
-.sub {
+#banner .sub {
   background-color: black;
   opacity: 0.9;
-  display: flex;
-  text-align: center;
+  margin: auto;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 #featured {
@@ -127,11 +125,12 @@ h4 {
 }
 
 .locations {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  justify-content:flex-start;
+  justify-content: center;
   align-content:space-between;
-  margin: 15px 30px 50px 30px;
+  margin: 15px 30px 50px 15px;
+  width: 1100px;
 }
 
 .cafe {
